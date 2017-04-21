@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="LNGuessView" id="iN0-l3-epB" customClass="LNGuessView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="七星彩预测" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zh7-ms-Heo">
+                    <rect key="frame" x="16" y="13" width="82" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.86469184027777779" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yy8-5j-p6Z">
+                    <rect key="frame" x="313" y="7" width="46" height="30"/>
+                    <state key="normal" title="换一换"/>
+                    <connections>
+                        <action selector="changBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="JgO-Gw-KX2"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猜一猜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohy-cf-Rye">
+                    <rect key="frame" x="106" y="15" width="43" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ohy-cf-Rye" firstAttribute="centerY" secondItem="Zh7-ms-Heo" secondAttribute="centerY" id="06a-Cd-XTD"/>
+                <constraint firstItem="Yy8-5j-p6Z" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="B1B-ND-dLI"/>
+                <constraint firstItem="Zh7-ms-Heo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="MaL-Y6-IhL"/>
+                <constraint firstItem="Zh7-ms-Heo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YDI-OD-4HV"/>
+                <constraint firstAttribute="trailing" secondItem="Yy8-5j-p6Z" secondAttribute="trailing" constant="16" id="eMG-gi-tcT"/>
+                <constraint firstItem="Ohy-cf-Rye" firstAttribute="leading" secondItem="Zh7-ms-Heo" secondAttribute="trailing" constant="8" id="tUT-yo-8v6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lottonryName" destination="Zh7-ms-Heo" id="xmC-oh-m7E"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="243"/>
+        </view>
+    </objects>
+</document>

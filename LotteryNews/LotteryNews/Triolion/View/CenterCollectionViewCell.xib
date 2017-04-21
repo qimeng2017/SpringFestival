@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CenterCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="281" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="281" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W4-aQ-RPs">
+                        <rect key="frame" x="121" y="122" width="39.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZ1-L8-hhf">
+                        <rect key="frame" x="119" y="157.5" width="44" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.86469184030000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ib-MZ-4BT">
+                        <rect key="frame" x="100" y="32" width="80" height="80"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="3Kw-Bf-BX0"/>
+                            <constraint firstAttribute="height" constant="80" id="QGg-2S-7fo"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="40"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="AZ1-L8-hhf" firstAttribute="top" secondItem="8W4-aQ-RPs" secondAttribute="bottom" constant="16" id="eIl-JQ-hyM"/>
+                <constraint firstItem="AZ1-L8-hhf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="lvD-d9-XQt"/>
+                <constraint firstItem="5ib-MZ-4BT" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="omt-jo-U8B"/>
+                <constraint firstItem="5ib-MZ-4BT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="32" id="op8-dF-0ok"/>
+                <constraint firstItem="8W4-aQ-RPs" firstAttribute="top" secondItem="5ib-MZ-4BT" secondAttribute="bottom" constant="10" id="tPz-E3-bHQ"/>
+                <constraint firstItem="8W4-aQ-RPs" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="yv1-iT-Eh0"/>
+            </constraints>
+            <size key="customSize" width="281" height="200"/>
+            <connections>
+                <outlet property="accuracyLable" destination="AZ1-L8-hhf" id="gEV-2U-xDL"/>
+                <outlet property="imageView" destination="5ib-MZ-4BT" id="8lJ-k8-nYx"/>
+                <outlet property="nameLable" destination="8W4-aQ-RPs" id="IN3-uj-F62"/>
+            </connections>
+            <point key="canvasLocation" x="-8.5" y="160"/>
+        </collectionViewCell>
+    </objects>
+</document>
